@@ -44,7 +44,10 @@ class CustomGridItem extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16),
-            Text(label, style: Theme.of(context).textTheme.displayMedium),
+            Text(
+              label,
+              style: TextStyle(fontSize: 18, color: Colors.black),
+            ),
           ],
         ),
       ),

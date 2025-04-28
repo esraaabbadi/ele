@@ -41,7 +41,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
       selectedItemColor: Colors.black,
       unselectedItemColor: Colors.black,
       selectedLabelStyle: TextStyle(
-        fontSize: 14,
+        fontSize: 18,
       ),
       unselectedLabelStyle:
           TextStyle(fontSize: 14, fontWeight: FontWeight.normal),

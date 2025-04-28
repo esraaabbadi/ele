@@ -5,7 +5,6 @@ import 'package:equapp/pages/Home%20Pages/daily_task.dart';
 import 'package:equapp/pages/Home%20Pages/search_via_qr.dart';
 import 'package:equapp/pages/equ_page/equipmets.dart';
 import 'package:equapp/pages/Home%20Pages/group_members.dart';
-import 'package:equapp/util/num.dart';
 import 'package:equapp/widget/CustomGridItem.dart';
 import 'package:equapp/widget/cutom_nav_bar.dart' as NavBarWidget;
 import 'package:equapp/widget/home_appbar.dart';

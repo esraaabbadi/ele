@@ -16,16 +16,20 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        backgroundColor: BGColor,
-        iconTheme: IconThemeData(
-          size: 40,
-          color: IconColor,
-        ),
-        title: Center(
-            child: Text(
+      backgroundColor: BGColor,
+      iconTheme: IconThemeData(
+        size: 40,
+        color: IconColor,
+      ),
+      title: Center(
+        child: Text(
           text,
-          style: TextStyle(fontSize: 20, color: TextColor),
-        )));
+          style: TextStyle(
+            color: TextColor, // ✅ Apply the passed text color here
+          ),
+        ),
+      ),
+    );
   }
 
   @override

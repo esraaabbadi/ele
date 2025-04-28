@@ -33,7 +33,9 @@ class _EquipmentsPageState extends State<EquipmentsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppbar(text: "المعدات"),
+      appBar: CustomAppbar(
+        text: "المعدات",
+      ),
       body: Stack(children: [
         Padding(
           padding: const EdgeInsets.all(16.0),

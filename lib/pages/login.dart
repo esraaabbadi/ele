@@ -1,7 +1,6 @@
 import 'package:equapp/controller/Login.dart';
 import 'package:equapp/controller/apiservices.dart';
 import 'package:equapp/pages/Home Pages/home.dart';
-import 'package:equapp/util/num.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -79,11 +78,7 @@ class _LoginPageState extends State<LogPage> {
                                   color: Colors.black,
                                   fontSize: 20,
                                 ),
-                                textDirection: TextDirection.rtl,
                                 keyboardType: TextInputType.number,
-                                inputFormatters: [
-                                  EnglishDigitFormatter(), // 👈 this is the key
-                                ],
                                 decoration: InputDecoration(
                                   prefixIcon: Icon(Icons.person,
                                       color: Color(0xFF157283)),

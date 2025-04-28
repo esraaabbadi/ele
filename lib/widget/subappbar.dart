@@ -130,7 +130,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       backgroundColor: const Color(0XFFEBF1F6),
       selectedItemColor: Colors.black,
       unselectedItemColor: Colors.black,
-      selectedLabelStyle: const TextStyle(fontSize: 14),
+      selectedLabelStyle: const TextStyle(fontSize: 18),
       unselectedLabelStyle:
           const TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
       currentIndex: widget.selectedIndex,

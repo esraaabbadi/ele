@@ -1,5 +1,4 @@
 import 'package:equapp/util/date.dart';
-import 'package:equapp/util/num.dart';
 import 'package:flutter/material.dart';
 
 class UserData extends StatelessWidget {
@@ -24,7 +23,7 @@ class UserData extends StatelessWidget {
       ),
       child: Container(
         width: double.infinity,
-        height: 250,
+        height: 270,
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
@@ -47,7 +46,7 @@ class UserData extends StatelessWidget {
                 Text(
                   'أهلاً ' + '${EName} - ${EMPID}',
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 19,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -67,7 +66,7 @@ class UserData extends StatelessWidget {
                 SizedBox(width: 10),
                 Text(
                   getCurrentDateTime(),
-                  style: TextStyle(fontSize: 16, color: Colors.white),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ],
             ),
@@ -78,7 +77,7 @@ class UserData extends StatelessWidget {
                 SizedBox(width: 10),
                 Text(
                   'مجموعة: ${RelatedGroup}',
-                  style: TextStyle(fontSize: 16, color: Colors.white),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ],
             ),
@@ -89,7 +88,7 @@ class UserData extends StatelessWidget {
                 SizedBox(width: 10),
                 Text(
                   'الصلاحية: ${CurrentUserLoginRole}',
-                  style: TextStyle(fontSize: 16, color: Colors.white),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ],
             ),

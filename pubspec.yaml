@@ -114,15 +114,15 @@ flutter:
   fonts:
     - family: bold
       fonts:
-        - asset: assets/fonts/bold.otf
+        - asset: assets/fonts/bold.ttf
    
     - family: light
       fonts:
-        - asset: assets/fonts/light.otf
+        - asset: assets/fonts/light.ttf
   
     - family: medium
       fonts:
-        - asset: assets/fonts/medium.otf
+        - asset: assets/fonts/medium.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

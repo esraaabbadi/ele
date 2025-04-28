@@ -27,9 +27,8 @@ void main() async {
   HttpOverrides.global = new MyHttpOverrides();
 
   var delegate = await LocalizationDelegate.create(
-    fallbackLocale: 'en',
+    fallbackLocale: 'ar',
     supportedLocales: [
-      'en',
       'ar',
     ],
   );
@@ -49,7 +48,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    var localizationDelegate = LocalizedApp.of(context).delegate;
+    // var localizationDelegate = LocalizedApp.of(context).delegate;
 
     return LocalizationProvider(
       state: LocalizationProvider.of(context).state,
@@ -91,13 +90,16 @@ class _MyAppState extends State<MyApp> {
               ),
         },
         title: 'Flutter Translate Demo',
-        localizationsDelegates: [
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          localizationDelegate
-        ],
-        supportedLocales: localizationDelegate.supportedLocales,
-        locale: localizationDelegate.currentLocale,
+        locale: Locale('ar'), // Arabic locale
+        supportedLocales: [Locale('ar'), Locale('en')],
+        localizationsDelegates: GlobalMaterialLocalizations.delegates,
+        // localizationsDelegates: [
+        //   GlobalMaterialLocalizations.delegate,
+        //   GlobalWidgetsLocalizations.delegate,
+        //   localizationDelegate
+        // ],
+        // supportedLocales: localizationDelegate.supportedLocales,
+        // locale: localizationDelegate.currentLocale,
         theme: ThemeData(
           useMaterial3: true,
           scaffoldBackgroundColor: Colors.grey.shade50,
